@@ -1,0 +1,152 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  background: url('https://enosistudio.com/wp-content/uploads/2025/04/capture-1.gif') no-repeat center center;
+  background-size: cover;
+  background-position: 30%;
+  background-attachment: fixed;
+  padding-top: 2em;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#header {
+  color: white;
+}
+
+#header-container {
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.text {
+  color: white;
+  margin: 0;
+}
+
+#about {
+  padding: 3em 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.about-text {
+  margin-bottom: 2em;
+}
+
+.about-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-image {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em; 
+  padding: 1em; 
+}
+
+.card {
+  background-color: white;
+  color: #222;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 240px; 
+  transition: transform 0.3s;
+}
+
+.card,
+#logo {
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-bottom: 0.5em;
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* Barra de navegación */
+#navbar {
+  width: 100%;
+  background: linear-gradient(270deg, #6699ff, #ff6666);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+#navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: opacity 0.3s;
+}
+
+#navbar li a:hover {
+  opacity: 0.7;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
